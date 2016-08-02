@@ -11,7 +11,7 @@ function initializeMoment(options) {
   if (!_moment) {
     if (options && options.moment) {
       if (options.moment.settings) {
-        Moment.locale(options.moment.lang, options.moment.settings)
+        Moment.updateLocale(options.moment.lang, options.moment.settings)
       }
       else {
         Moment.locale(options.moment.lang)
